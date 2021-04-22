@@ -1,0 +1,7 @@
+<h2 class="header-title">BLOGPOSTS</h2>
+<mat-card class="blog-list-item" *ngFor="let post of posts">
+  <mat-card-header automationID="234">
+    <mat-card-title class="blog-list-item-title"><div [routerLink]="['/post', post.id]">{{post.title}}</div></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>{{post.body}}</mat-card-content>
+</mat-card>

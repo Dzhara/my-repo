@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  .header-title {
+    margin-top: 50px;
+  }
+  .blog-list-item {
+    margin: 20px 0;
+    width: 500px;
+    &-title {
+      text-transform: uppercase;
+    }
+  }
+}

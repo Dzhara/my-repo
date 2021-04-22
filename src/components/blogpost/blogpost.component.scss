@@ -1,0 +1,37 @@
+@import '../../styles/_colors';
+
+:host {
+  width: 500px;
+
+  .post {
+    margin-top: 10px;
+    &-title {
+      text-transform: uppercase;
+    }
+    &-body {
+      font-size: 16px;
+    }
+  }
+
+  .comment {
+    &-title {
+      padding-top: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+    }
+    &-container {
+      margin: 10px 0;
+    }
+    &-name {
+      padding-bottom: 2px;
+      font-size: 16px;
+      color: $color-primary-blue;
+    }
+    &-email {
+      padding-top: 5px;
+      font-size: 12px;
+      color: $color-primary-grey;
+    }
+  }
+}

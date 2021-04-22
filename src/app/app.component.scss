@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    padding: 20px;
+    min-width: 550px;
+    background: white;
+  }
+}
+

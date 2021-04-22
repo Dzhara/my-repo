@@ -1,0 +1,12 @@
+<mat-card class="post" *ngIf="post !== undefined">
+  <mat-card-title class="post-title">{{post.title}}</mat-card-title>
+  <mat-card-content class="post-body">
+    {{post.body}}
+  <div class="comment-title">COMMENTS</div>
+    <div class="comment-container" *ngFor="let comment of comments">
+      <div class="comment-name">{{comment.name}}</div>
+      <div class="comment-body">{{comment.body}}</div>
+      <div class="comment-email">{{comment.email}}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

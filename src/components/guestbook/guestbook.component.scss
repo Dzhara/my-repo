@@ -1,0 +1,39 @@
+@import '../../styles/_colors';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .guestbook {
+    &-add-review-button {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+
+    &-review {
+      padding: 20px 16px;
+      margin: 20px 0;
+      width: 500px;
+    }
+
+    &-review-message {
+      font-size: 18px;
+    }
+
+    &-review-name{
+      width: 150px;
+      float: right;
+      margin-bottom: unset!important;
+      padding-bottom: 5px;
+      font-size: 12px;
+      color: $color-primary-grey;
+    }
+  }
+
+  .popover-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

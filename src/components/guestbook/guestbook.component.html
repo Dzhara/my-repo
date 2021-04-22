@@ -1,0 +1,27 @@
+<button mat-raised-button color="primary"
+        class="guestbook-add-review-button"
+        (click)="openDialog()">ADD REVIEW
+</button>
+
+<h2
+>REVIEWS</h2>
+<ng-template #noData>No reviews here yet. Feel free to add yours!</ng-template>
+<div *ngIf="(reviews | async).length > 0; else noData">
+  <mat-card class="guestbook-review" *ngFor="let review of reviews | async;">
+    <mat-card-content>
+      <div class="guestbook-review-message">{{review.message}}</div>
+
+      <ng-template #userinfo>
+        <div class="popover-wrapper">
+          <b>Name:</b>{{review.author}}
+          <b>Email:</b>{{review.email}}
+        </div>
+      </ng-template>
+<!--      <div class="guestbook-review-name" placement="top"-->
+<!--           [ngbPopover]="userinfo"-->
+<!--           popoverTitle="USER INFO"-->
+<!--      >{{review.author}}</div>-->
+    </mat-card-content>
+
+  </mat-card>
+</div>

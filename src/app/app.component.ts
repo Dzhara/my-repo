@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
+import {selectLoading} from '../+ state';
+import {Store} from '@ngrx/store';
+import {AppState} from '../+ state/root/root.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-demo-blog';
+  loading$: Observable<boolean>;
+  routerLinks = [{ href: '/blogposts', label: 'BLOGPOSTS' }, { href: '/guestbook', label: 'GUESTBOOK' }];
+
+  constructor(private store: Store<AppState>) {
+    this.loading$ = this.store.select(selectLoading);
+  }
 }

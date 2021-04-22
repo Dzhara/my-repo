@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>CREATE REVIEW</h1>
+<div mat-dialog-content>
+  <form #createReviewForm="ngForm">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input id="name" name="name" required matInput [(ngModel)]="data.author" autocomplete="off" #name="ngModel">
+    <div *ngIf="name.invalid && (name.dirty || name.touched)"
+         class="alert alert-danger">
+      <div *ngIf="name.errors.required">
+        Name is required.
+      </div>
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>E-mail</mat-label>
+    <input matInput [(ngModel)]="data.email" autocomplete="off" id="email" name="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Message</mat-label>
+    <textarea id="message" name="message" #message="ngModel" required matInput [(ngModel)]="data.message" minlength="20"></textarea>
+    <div *ngIf="message.invalid && (message.dirty || message.touched)"
+         class="alert alert-danger">
+      <div *ngIf="message.errors.required">
+        Message is required.
+      </div>
+      <div *ngIf="message.errors.minlength">
+        Message must be at least 20 characters long.
+      </div>
+    </div>
+  </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button  (click)="onCancel()">CANCEL</button>
+  <button mat-button [disabled]="!createReviewForm.valid" [mat-dialog-close]="data" cdkFocusInitial>OK</button>
+</div>
+
