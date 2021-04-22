@@ -122,6 +122,13 @@
   resolved "https://artifact.swissre.com/api/npm/npm/@angular/animations/-/animations-9.0.7.tgz#b91219257ea40f34a79fd66f10860409f29f3e29"
   integrity sha1-uRIZJX6kDzSnn9ZvEIYECfKfPik=
 
+"@angular/cdk@~9.2.1":
+  version "9.2.4"
+  resolved "https://artifact.swissre.com/api/npm/npm/@angular/cdk/-/cdk-9.2.4.tgz#8413958bd275e4c34be3b96f56444671dd30ba93"
+  integrity sha1-hBOVi9J15MNL47lvVkRGcd0wupM=
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~9.0.3":
   version "9.0.7"
   resolved "https://artifact.swissre.com/api/npm/npm/@angular/cli/-/cli-9.0.7.tgz#67df7b13fd750a8ac142b4ab8488439439385885"
@@ -190,6 +197,11 @@
   version "9.0.7"
   resolved "https://artifact.swissre.com/api/npm/npm/@angular/language-service/-/language-service-9.0.7.tgz#c204467383ee5f194a73a365ea7c543c6900bb54"
   integrity sha1-wgRGc4PuXxlKc6Nl6nxUPGkAu1Q=
+
+"@angular/material@~9.2.1":
+  version "9.2.4"
+  resolved "https://artifact.swissre.com/api/npm/npm/@angular/material/-/material-9.2.4.tgz#2666ef606fbb88d60f8e2f18c5e4f94a3dd572d8"
+  integrity sha1-JmbvYG+7iNYPji8YxeT5Sj3Vctg=
 
 "@angular/platform-browser-dynamic@~9.0.2":
   version "9.0.7"
@@ -899,6 +911,41 @@
   version "0.1.3"
   resolved "https://artifact.swissre.com/api/npm/npm/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha1-5F44TkuOwWvOL9kDr3hFD2v37Jg=
+
+"@ngrx/effects@10.1.2":
+  version "10.1.2"
+  resolved "https://artifact.swissre.com/api/npm/npm/@ngrx/effects/-/effects-10.1.2.tgz#f1c9daa2e3e13aeb6af272cb52f6dff73d364d68"
+  integrity sha1-8cnaouPhOutq8nLLUvbf9z02TWg=
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/entity@10.1.2":
+  version "10.1.2"
+  resolved "https://artifact.swissre.com/api/npm/npm/@ngrx/entity/-/entity-10.1.2.tgz#17c93af662de3083a6914af7400182f75924d61f"
+  integrity sha1-F8k69mLeMIOmkUr3QAGC91kk1h8=
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/router-store@10.1.2":
+  version "10.1.2"
+  resolved "https://artifact.swissre.com/api/npm/npm/@ngrx/router-store/-/router-store-10.1.2.tgz#f8083121611ba72450998eb37dffc26dd17f8ab0"
+  integrity sha1-+AgxIWEbpyRQmY6zff/CbdF/irA=
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store-devtools@^11.1.0":
+  version "11.1.1"
+  resolved "https://artifact.swissre.com/api/npm/npm/@ngrx/store-devtools/-/store-devtools-11.1.1.tgz#bdefc5c03dcac6fc21fcc9e33a4a3a3464f3e2d6"
+  integrity sha1-ve/FwD3Kxvwh/MnjOko6NGTz4tY=
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store@^10.1.2":
+  version "10.1.2"
+  resolved "https://artifact.swissre.com/api/npm/npm/@ngrx/store/-/store-10.1.2.tgz#a41aee81ea7b7e4a9f927be560e6024830211efb"
+  integrity sha1-pBrugep7fkqfknvlYOYCSDAhHvs=
+  dependencies:
+    tslib "^2.0.0"
 
 "@ngtools/webpack@9.0.7":
   version "9.0.7"
@@ -5984,6 +6031,11 @@ parse5@4.0.0:
   resolved "https://artifact.swissre.com/api/npm/npm/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha1-bXhlbj2o14tOwLkG98CO8d/j9gg=
 
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://artifact.swissre.com/api/npm/npm/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha1-9o5OW6GFKsLK3AD0VV//bCq7YXg=
+
 parseqs@0.0.5:
   version "0.0.5"
   resolved "https://artifact.swissre.com/api/npm/npm/parseqs/-/parseqs-0.0.5.tgz#d5208a3738e46766e291ba2ea173684921a8b89d"
@@ -6641,6 +6693,11 @@ querystringify@^2.1.1:
   resolved "https://artifact.swissre.com/api/npm/npm/querystringify/-/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
   integrity sha1-M0WUG0FTy50ILY7uTNogFqmu9/Y=
 
+ramda@^0.27.1:
+  version "0.27.1"
+  resolved "https://artifact.swissre.com/api/npm/npm/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
+  integrity sha1-Zvwt8++HOHT/wtpqqJhGWKus9ck=
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://artifact.swissre.com/api/npm/npm/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -7001,17 +7058,10 @@ rxjs@6.5.3:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.4.0:
+rxjs@^6.4.0, rxjs@^6.6.7:
   version "6.6.7"
   resolved "https://artifact.swissre.com/api/npm/npm/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
-  dependencies:
-    tslib "^1.9.0"
-
-rxjs@~6.5.4:
-  version "6.5.5"
-  resolved "https://artifact.swissre.com/api/npm/npm/rxjs/-/rxjs-6.5.5.tgz#c5c884e3094c8cfee31bf27eb87e54ccfc87f9ec"
-  integrity sha1-xciE4wlMjP7jG/J+uH5UzPyH+ew=
   dependencies:
     tslib "^1.9.0"
 
@@ -8022,6 +8072,11 @@ tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://artifact.swissre.com/api/npm/npm/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
+
+tslib@^2.0.0:
+  version "2.2.0"
+  resolved "https://artifact.swissre.com/api/npm/npm/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
+  integrity sha1-+yxHWXfjXiQTEe3iaTzuHsZpj1w=
 
 tslint@~5.18.0:
   version "5.18.0"
