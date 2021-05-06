@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 7777",
+    "start": "ng serve --port 4200",
     "build": "ng build",
     "deploy": "ng deploy --base-href=/my-repo/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "private": true,
   "dependencies": {
@@ -45,6 +50,7 @@
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "^5.1.2",
+    "husky": "4.2.3",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.3.0",

@@ -2,7 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {BlogpostService} from '../../services/blogpost-service/blogpost.service';
 import {ActivatedRoute} from '@angular/router';
 import {Blogpost, Comment} from '../../services/blogpost-service/blogspot.model';
-import {forkJoin, Observable, Subject} from 'rxjs';
+import {forkJoin, Subject} from 'rxjs';
 import {AppState} from '../../+ state/root/root.model';
 import {Store} from '@ngrx/store';
 import {setLoading} from '../../+ state';

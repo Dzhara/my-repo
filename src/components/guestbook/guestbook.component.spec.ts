@@ -6,7 +6,6 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {MockSelector, MockStoreConfig, provideMockStore} from '@ngrx/store/testing';
 import {AppState} from '../../+ state/root/root.model';
 import {selectLoading, selectReviews} from '../../+ state';
-import {AppComponent} from '../../app/app.component';
 
 const initialState: AppState = {
   loading: false,
