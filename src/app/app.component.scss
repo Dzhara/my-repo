@@ -1,8 +1,12 @@
+@import '../styles/colors';
+
 :host {
   display: flex;
-  align-items: center;
+  height: 100%;
   justify-content: center;
+  background-color: $color-background;
   .container {
+    overflow-y: auto;
     padding: 20px;
     min-width: 550px;
     background: white;
