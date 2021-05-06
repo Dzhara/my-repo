@@ -17,11 +17,14 @@
           <b>Email:</b>{{review.email}}
         </div>
       </ng-template>
-<!--      <div class="guestbook-review-name" placement="top"-->
-<!--           [ngbPopover]="userinfo"-->
-<!--           popoverTitle="USER INFO"-->
-<!--      >{{review.author}}</div>-->
-    </mat-card-content>
 
+    </mat-card-content>
+    <mat-card-footer>
+      <div class="guestbook-review-name" placement="top"
+           [ngbPopover]="userinfo"
+           triggers="mouseenter:mouseleave"
+           popoverTitle="USER INFO"
+      >{{review.author}}</div>
+    </mat-card-footer>
   </mat-card>
 </div>

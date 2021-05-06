@@ -22,11 +22,9 @@
     }
 
     &-review-name{
+      padding-left: 16px;
       width: 150px;
-      float: right;
-      margin-bottom: unset!important;
-      padding-bottom: 5px;
-      font-size: 12px;
+      font-size: 14px;
       color: $color-primary-grey;
     }
   }
@@ -36,4 +34,3 @@
     flex-direction: column;
   }
 }
-
