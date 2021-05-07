@@ -7,6 +7,11 @@ import {GuestbookComponent} from '../components/guestbook/guestbook.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'blogposts',
+    pathMatch: 'full',
+  },
+  {
     path: 'blogposts',
     component: BlogpostListComponent,
   },
